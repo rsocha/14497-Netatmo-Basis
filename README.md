@@ -41,6 +41,8 @@ Der Baustein dient zur Kommunikation mit einer Netatmo Basis Station.
 
 ### Change Log
 
+ - v0.2
+     - div. Anpassungen  
  - v0.1
      - Initial
 
