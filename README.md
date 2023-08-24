@@ -40,7 +40,8 @@ Der Baustein dient zur Kommunikation mit einer Netatmo Basis Station.
 - Kategorie: Datenaustausch
 
 ### Change Log
-
+- v0.3
+     - Zeitformatierung entfernt
  - v0.2
      - div. Anpassungen  
  - v0.1
