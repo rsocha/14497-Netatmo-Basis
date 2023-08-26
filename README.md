@@ -6,14 +6,16 @@ Der Baustein dient zur Kommunikation mit einer Netatmo Basis Station.
 
 ## Eingänge
 
-| Nr. | Name          | Initialisierung   | Beschreibung                                                                                                          |
-|-----|---------------|-------------------|-----------------------------------------------------------------------------------------------------------------------|
-| 1   | Intervall     | 0                 | Bei einem Wert <> 0 werden die Daten vom Netatmo Portal zyklisch mit dem angegebenen Intervall in Sekunden abgerufen. |
-| 2   | Trigger       | 0                 | Bei einem Wert <> 0 werden die Daten vom Netatmo Portal abgerufen.                                                    |
-| 2   | Client ID     | 0                 | Client ID vom Netatmo Portal                                                                                          |
-| 3   | Client Secret | 0                 | Client Secret vom Netatmo Portal                                                                                      |    
-| 3   | Refreh Token  | 0                 | refresh-token vom Netatmo Portal                                                                                      |
-| 4   | Device ID     | 70:ee:xx:xx:xx:xx | mac Adresse vom Gerät. !! Kleinbuchstaben verwenden !!                                                                |
+| Nr. | Name              | Initialisierung   | Beschreibung                                                                                                          |
+|-----|-------------------|-------------------|-----------------------------------------------------------------------------------------------------------------------|
+| 1   | Intervall         | 0                 | Bei einem Wert <> 0 werden die Daten vom Netatmo Portal zyklisch mit dem angegebenen Intervall in Sekunden abgerufen. |
+| 2   | Trigger           | 0                 | Bei einem Wert <> 0 werden die Daten vom Netatmo Portal abgerufen.                                                    |
+| 3   | Client ID         | 0                 | Client ID vom Netatmo Portal                                                                                          |
+| 4   | Client Secret     | 0                 | Client Secret vom Netatmo Portal                                                                                      |    
+| 5   | Refreh Token      | 0                 | refresh-token vom Netatmo Portal                                                                                      |
+| 6   | Device ID         | 70:ee:xx:xx:xx:xx | mac Adresse vom Gerät. !! Kleinbuchstaben verwenden !!                                                                |
+| 7   | Zeitformat 0/1    | 0                 | Soll eine Umwandlung der Zeitausgabe erfolgen. 0=Nein / 1=Ja                                                          |
+| 8   | Format Datum-Zeit | %d-%m-%Y %H:%M:%S | Format der Zeitausgabe                                                                                                |
 
 
 ## Ausgänge
@@ -41,7 +43,7 @@ Der Baustein dient zur Kommunikation mit einer Netatmo Basis Station.
 
 ### Change Log
 - v0.3
-     - Zeitformatierung entfernt
+     - Zeitformatierung hinzugefügt
  - v0.2
      - div. Anpassungen  
  - v0.1
