@@ -1,3 +1,5 @@
+![Anurag's GitHub stats](https://github-readme-stats.vercel.app/api?username=rsochaa&show_icons=true&theme=transparent)
+
 # 14497 Netatmo Basis
 
 ## Beschreibung 
