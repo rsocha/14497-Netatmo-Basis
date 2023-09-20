@@ -32,20 +32,20 @@ jobs:
       - name: checkout gh-workflow
         uses: actions/checkout@v2
         with:
-          repository: '{{REPO_OWNER}}/gh-workflow'
+          repository: '{{rsocha}}/gh-workflow'
           path: gh-workflow
 
       - name: checkout gh-stats
         uses: actions/checkout@v2
         with:
-          repository: '{{REPO_OWNER}}/{{REPO}}--gh-stats'
+          repository: '{{rsocha}}/{{REPO}}--gh-stats'
           path: gh-stats
 
       - name: request traffic clones json
         run: |
           curl --user "${{ github.actor }}:${{ secrets.SECRET_TOKEN }}" \
             -H "Accept: application/vnd.github.v3+json" \
-            https://api.github.com/repos/{{REPO_OWNER}}/{{REPO}}/traffic/clones \
+            https://api.github.com/repos/{{rsocha}}/{{REPO}}/traffic/clones \
             > "$GITHUB_WORKSPACE/gh-stats/$traffic_clones_json"
 
       - name: accumulate traffic clones
@@ -89,6 +89,6 @@ jobs:
       - name: push gh-stats
         uses: ad-m/github-push-action@master
         with:
-          repository: '{{REPO_OWNER}}/{{REPO}}--gh-stats'
+          repository: '{{rsocha}}/{{REPO}}--gh-stats'
           directory: gh-stats
           github_token: ${{ secrets.SECRET_TOKEN }}
